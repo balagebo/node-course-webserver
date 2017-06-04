@@ -38,6 +38,12 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('portfolio.hbs', {
+        title: 'Portfolio'
+    });
+});
+
 app.get('/bad', (request, response) => {
     response.send({
         errorMessage: 'MEghaltál',
